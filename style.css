@@ -1,0 +1,69 @@
+
+body{
+        background:url('https://cudoo.com/blog/wp-content/uploads/2019/01/chinese-ny-bg.png');
+        background-size: cover;
+        background-repeat: none;
+        margin:1em;
+        font-family:sans-serif;
+/*         perspective: 100vw; */
+        transform-style: preserve-3d;
+      }
+      .main {
+			height:15em;
+        	width:10em;
+        	position:relative;
+        	margin:200px auto;
+        	transform-style: preserve-3d;
+        	transform: rotateX(45deg) rotateZ(85deg) rotateY(40deg);
+      }
+      .head {
+			transform: rotateX(0deg);
+         background: red;
+        	border-radius: 8%;
+        	opacity:.9;
+      }
+      p {
+			font-size:70px;
+        	transform: rotateZ(-90deg);
+        	text-align: center;
+        	color:yellow;
+      }
+      .conner1 {
+			position:absolute;
+        	bottom:-70px;
+        	left:0;
+      }
+      .conner2 {
+			position:absolute;
+        	bottom:-70px;
+        	right:0;
+      }
+      
+      .plate {
+			height:15em;
+        	width:25em;
+        	position:absolute;
+        	transform-style: preserve-3d;
+        	box-shadow:  5px 5px 5px #dddd;
+        	
+      }
+/*       .p1 {
+        	transform-origin: bottom right;
+        	animation: puun 2.2s infinite ;
+        	background: blue;
+      } */
+      .p2 {
+			transform-origin: top right;
+        	background:linear-gradient(hsl(25, 100%, 50%) , hsl(10, 100%, 50%));
+        	animation: puun1 2.2s 1s infinite;
+        	border-radius: 5%;
+      }
+      .p3 {
+			background:linear-gradient(hsl(1, 100%, 50%) , hsl(25, 100%, 50%));
+        border-radius: 5%;
+        	
+      }
+      @keyframes puun1{
+        from{transform: rotatex(-180deg) translatey(-15em)}
+        to {transform: rotatex(-40deg) translatey(-15em)}
+      }
